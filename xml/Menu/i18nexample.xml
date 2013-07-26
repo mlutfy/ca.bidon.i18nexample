@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/i18nexample</path>
+    <page_callback>CRM_I18nexample_Page_I18nexample</page_callback>
+    <title>Example i18n extension page title (from XML menu)</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+  <item>
+    <path>civicrm/i18nexample2</path>
+    <page_callback>CRM_I18nexample_Page_I18nexample2</page_callback>
+    <title>Example i18n extension page title (overriden by PHP)</title>
+    <access_arguments>access CiviCRM</access_arguments>
+  </item>
+</menu>
