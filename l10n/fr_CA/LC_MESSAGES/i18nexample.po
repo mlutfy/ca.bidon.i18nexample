@@ -25,6 +25,9 @@ msgstr "Il est présentement %1."
 msgid "The title of the page is set from the CiviCRM menu XML, and at the moment, cannot be localized."
 msgstr "Le titre de cette page provient du menu XML de CiviCRM. Il n'est pas possible de le traduire pour l'instant."
 
+msgid "Example i18n extension page title (from XML, cannot be translated?)"
+msgstr "Titre de page de l'exemple d'extention i18n (le titre provient du XML, ne peut pas être traduit?)"
+
 msgid "i18nexample title page"
 msgstr "Titre de la page i18nexample"
 
