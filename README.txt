@@ -17,6 +17,19 @@ INSTALLATION:
 * Install as any regular extension.
 * Enable "native gettext" support:
   http://wiki.civicrm.org/confluence/display/CRMDOC43/CiviCRM+Localisation#CiviCRMLocalisation-Usingnativegettextsupport/setlocale
+* Compile the .po file for your language (if available)
+  $ sudo apt-get install gettext
+  $ msgfmt l10n/fr_CA/LC_MESSAGES/i18nexample.po -o l10n/fr_CA/LC_MESSAGES/i18nexample.mo
+
+TRANSLATING THE EXAMPLE:
+
+If you have a few minutes to translate the example strings into your language,
+please open an issue on the github project page with your file attached:
+https://github.com/mlutfy/ca.bidon.i18nexample/issues
+
+For simplicity, or so I think, you can copy the i18nexample.po from fr_CA into your
+language and translate using a regular text editor. Hopefully, we will have a more
+automated system for doing this soon.
 
 BUGS & SUPPORT:
 
@@ -29,6 +42,11 @@ http://issues.civicrm.org/
 
 For bugs regarding this demo extension, please post on the github project page:
 https://github.com/mlutfy/ca.bidon.i18nexample/issues
+
+TODO:
+
+* SQL install/upgrade examples?
+* Better documentation (wiki page, blog post, ..)
 
 LICENSE AND REDISTRIBUTION:
 
