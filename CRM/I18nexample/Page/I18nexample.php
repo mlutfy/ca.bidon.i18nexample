@@ -24,6 +24,14 @@ class CRM_I18nexample_Page_I18nexample extends CRM_Core_Page {
     $x = rand(0, 2);
     $this->assign('currentTimeRandomSentence', $saytime[$x]);
 
+    // For the JS ts() test:
+    CRM_Core_Resources::singleton()->addScriptFile('ca.bidon.i18nexample', 'i18nexample.js');
+    CRM_Core_Resources::singleton()->addSetting(array(
+      'i18nexample' => array(
+        'currentTime' => $time,
+      )
+    ));
+
     /**
       NB: VERY BAD PRACTICE: do not do this:
 

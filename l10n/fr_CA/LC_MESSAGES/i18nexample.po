@@ -37,3 +37,12 @@ msgstr "Selon le serveur, il est %1."
 msgid "This page was generated at %1."
 msgstr "Page générée à %1."
 
+msgid "This is a string in a javascript function in the i18nexample extension. Page generated at %1."
+msgstr "Cette chaîne de texte est dans une fonction javascript de l'extention i18nexample. Page générée à %1."
+
+msgid "Yay!"
+msgstr "Youppi!"
+
+msgid "Javascript test popup."
+msgstr "Test de traduction en javascript."
+

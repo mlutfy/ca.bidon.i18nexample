@@ -5,3 +5,5 @@
 
 {* Example: Display a translated string -- which happens to include a variable *}
 <p>{ts 1=$currentTime domain='ca.bidon.i18nexample'}The current time is %1.{/ts}</p>
+
+<p><a class="crm-i18nexample-test" href="#">{ts domain='ca.bidon.i18nexample'}Javascript test popup.{/ts}</a></p>
