@@ -13,11 +13,7 @@ http://forum.civicrm.org/index.php/topic,28426.msg121556.html
 INSTALLATION:
 
 * Install as any regular extension.
-* Enable "native gettext" support:
-  http://wiki.civicrm.org/confluence/display/CRMDOC43/CiviCRM+Localisation#CiviCRMLocalisation-Usingnativegettextsupport/setlocale
-* Compile the .po file for your language (if available)
-  $ sudo apt-get install gettext
-  $ msgfmt l10n/fr_CA/LC_MESSAGES/i18nexample.po -o l10n/fr_CA/LC_MESSAGES/i18nexample.mo
+* Download the i18nexample.mo file for your language (see next section).
 
 TRANSLATING THE EXAMPLE:
 
