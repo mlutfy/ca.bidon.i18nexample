@@ -6,14 +6,19 @@
   <license>AGPL 3</license>
   <maintainer>
     <author>Mathieu Lutfy</author>
-    <email>mathieu@bidon.ca</email>
+    <email>mathieu@symbiotic.coop</email>
   </maintainer>
-  <releaseDate>2014-05-02</releaseDate>
-  <version>1.1</version>
-  <develStage>beta</develStage>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/mlutfy/ca.bidon.i18nexample</url>
+    <url desc="Documentation">https://docs.civicrm.org/dev/en/latest/translation/extensions/</url>
+    <url desc="Support">https://github.com/mlutfy/ca.bidon.i18nexample/issues</url>
+    <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2018-02-02</releaseDate>
+  <version>1.2</version>
+  <develStage>stable</develStage>
   <compatibility>
-    <ver>4.4</ver>
-    <ver>4.5</ver>
+    <ver>4.7</ver>
   </compatibility>
   <comments>Example extension to test i18n support. After installing the extension, go to /civicrm/i18nexample, or /civicrm/i18nexample2. You must have a l10n/xx_XX/LC_MESSAGES/i18nexample.mo files for your language (see README.txt for details).</comments>
   <civix>
