@@ -2,12 +2,14 @@
 
 require_once 'CRM/Core/Page.php';
 
+use CRM_I18nexample_ExtensionUtil as E;
+
 class CRM_I18nexample_Page_I18nexample extends CRM_Core_Page {
   function run() {
     // NB: in this case we are not setting the title of the page, so it is the page title set from the menu XML
     // At the moment, we cannot localize those titles. We keep this example so that we can improve/test later.
     //
-    // CRM_Utils_System::setTitle(ts('i18nexample title page', array('domain' => 'ca.bidon.i18nexample')));
+    // CRM_Utils_System::setTitle(ts('i18nexample title page'));
 
     // Example: Assign variables for use in a template.
     // we assign both the time and a silly sentence, to show how we can translate in either
@@ -16,9 +18,9 @@ class CRM_I18nexample_Page_I18nexample extends CRM_Core_Page {
     $this->assign('currentTime', $time);
 
     $saytime = array(
-      0 => ts('Current time: %1.', array(1 => $time, 'domain' => 'ca.bidon.i18nexample')),
-      1 => ts('According to the server, it is %1.', array(1 => $time, 'domain' => 'ca.bidon.i18nexample')),
-      2 => ts('This page was generated at %1.', array(1 => $time, 'domain' => 'ca.bidon.i18nexample')),
+      0 => E::ts('Current time: %1.', array(1 => $time)),
+      1 => E::ts('According to the server, it is %1.', array(1 => $time)),
+      2 => E::ts('This page was generated at %1.', array(1 => $time)),
     );
 
     $x = rand(0, 2);
@@ -26,11 +28,11 @@ class CRM_I18nexample_Page_I18nexample extends CRM_Core_Page {
 
     // For the JS ts() test:
     CRM_Core_Resources::singleton()->addScriptFile('ca.bidon.i18nexample', 'i18nexample.js');
-    CRM_Core_Resources::singleton()->addSetting(array(
-      'i18nexample' => array(
+    CRM_Core_Resources::singleton()->addSetting([
+      'i18nexample' => [
         'currentTime' => $time,
-      )
-    ));
+      ],
+    ]);
 
     /**
       NB: VERY BAD PRACTICE: do not do this:
@@ -41,7 +43,7 @@ class CRM_I18nexample_Page_I18nexample extends CRM_Core_Page {
         2 => 'This page was generated at:',
       );
 
-      $foo = ts($saytime) . ' ' . $time;
+      $foo = E::ts($saytime) . ' ' . $time;
 
       NB: VERY BAD PRACTICE: do not do the above.
       1- It will not be possible to extract the string automatically, because is it not wrapped in ts().
