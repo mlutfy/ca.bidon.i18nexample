@@ -6,7 +6,7 @@ To get the latest version of this extension:
 https://github.com/mlutfy/ca.bidon.i18nexample
 
 References:
-http://wiki.civicrm.org/confluence/display/CRMDOC/Extension+translation
+https://docs.civicrm.org/dev/en/latest/translation/extensions/
 http://civicrm.org/blogs/joe-murray/translations-extensions
 http://forum.civicrm.org/index.php/topic,28426.msg121556.html
 
@@ -31,24 +31,18 @@ https://download.civicrm.org/civicrm-l10n-extensions/mo/i18nexample/es_ES/i18nex
 
 BUGS & SUPPORT:
 
-Please post your questions about extension internationalisation and localisation
-on the CiviCRM forum for i18n/l10n:
-http://forum.civicrm.org/index.php/board,10.0.html
+Please post your questions about extension translation on Mattermost:
+https://chat.civicrm.org/civicrm/channels/translation
 
-For confirmed bugs, please post on the CiviCRM issue tracker:
-http://issues.civicrm.org/
+For bug reports:
+https://lab.civicrm.org/development-team/translations
 
 For bugs regarding this demo extension, please post on the github project page:
 https://github.com/mlutfy/ca.bidon.i18nexample/issues
 
-TODO:
-
-* SQL install/upgrade examples?
-* Better documentation (wiki page, blog post, ..)
-
 LICENSE AND REDISTRIBUTION:
 
-(C) 2013-2014 Mathieu Lutfy
+(C) 2013-2018 Mathieu Lutfy
 http://www.bidon.ca/en/about
 
 Redistributed under the AGPL license:
